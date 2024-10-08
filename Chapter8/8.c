@@ -5,13 +5,13 @@
 #define SIZE 5
 
 int main(void) {
-  
+
   int student_scores[SIZE][SIZE] = {0};
 
   // Prompt the user to input the quiz scores for each student
-  
+
   for (int i = 0; i < SIZE; i++) {
-    
+
     printf("Enter the quiz scores for STUDENT %c:\n\n", 'A' + i);
 
     for (int j = 0; j < SIZE; j++) {
@@ -22,7 +22,7 @@ int main(void) {
     }
 
     printf("\n");
-    
+
   }
 
   /*
@@ -38,9 +38,9 @@ int main(void) {
 
   }*/
 
-  
+
   // Calculations for each student
-  
+
   for (int i = 0; i < SIZE; i++) {
 
     int total_score = 0;
@@ -62,7 +62,7 @@ int main(void) {
 
 
   // Calculations for each quiz
-  
+
   for (int i = 0; i < SIZE; i++) {
 
     int total_score = 0, highest_score = INT_MIN, lowest_score = INT_MAX; 
@@ -85,6 +85,6 @@ int main(void) {
     printf("\n");
   }
 
-  
+
   return 0;
 }
